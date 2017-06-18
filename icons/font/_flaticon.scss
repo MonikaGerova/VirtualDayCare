@@ -1,0 +1,101 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 10/06/2017 18:52
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-letter-x:before { content: "\f100"; }
+.flaticon-tick-mark:before { content: "\f101"; }
+.flaticon-people-3:before { content: "\f102"; }
+.flaticon-people-2:before { content: "\f103"; }
+.flaticon-people-1:before { content: "\f104"; }
+.flaticon-learning-1:before { content: "\f105"; }
+.flaticon-male-cartoon-pointing-to-white-board:before { content: "\f106"; }
+.flaticon-learning:before { content: "\f107"; }
+.flaticon-list:before { content: "\f108"; }
+.flaticon-chemistry-lab-instrument:before { content: "\f109"; }
+.flaticon-teacher:before { content: "\f10a"; }
+.flaticon-business-people-meeting:before { content: "\f10b"; }
+.flaticon-crowd-of-users:before { content: "\f10c"; }
+.flaticon-people:before { content: "\f10d"; }
+.flaticon-folder:before { content: "\f10e"; }
+.flaticon-gamepad:before { content: "\f10f"; }
+.flaticon-letter-cubes:before { content: "\f110"; }
+.flaticon-math-on-blackboard:before { content: "\f111"; }
+.flaticon-lab-microscope:before { content: "\f112"; }
+.flaticon-microscope-side-view:before { content: "\f113"; }
+.flaticon-flask-outline:before { content: "\f114"; }
+.flaticon-home:before { content: "\f115"; }
+.flaticon-close-envelope:before { content: "\f116"; }
+.flaticon-chat-bubbles-with-ellipsis:before { content: "\f117"; }
+.flaticon-gallery:before { content: "\f118"; }
+.flaticon-pictures:before { content: "\f119"; }
+.flaticon-computer-monitor:before { content: "\f11a"; }
+.flaticon-identity-card:before { content: "\f11b"; }
+.flaticon-school-calendar:before { content: "\f11c"; }
+.flaticon-mathematics-class:before { content: "\f11d"; }
+.flaticon-books-stack-of-three:before { content: "\f11e"; }
+    
+    $font-Flaticon-letter-x: "\f100";
+    $font-Flaticon-tick-mark: "\f101";
+    $font-Flaticon-people-3: "\f102";
+    $font-Flaticon-people-2: "\f103";
+    $font-Flaticon-people-1: "\f104";
+    $font-Flaticon-learning-1: "\f105";
+    $font-Flaticon-male-cartoon-pointing-to-white-board: "\f106";
+    $font-Flaticon-learning: "\f107";
+    $font-Flaticon-list: "\f108";
+    $font-Flaticon-chemistry-lab-instrument: "\f109";
+    $font-Flaticon-teacher: "\f10a";
+    $font-Flaticon-business-people-meeting: "\f10b";
+    $font-Flaticon-crowd-of-users: "\f10c";
+    $font-Flaticon-people: "\f10d";
+    $font-Flaticon-folder: "\f10e";
+    $font-Flaticon-gamepad: "\f10f";
+    $font-Flaticon-letter-cubes: "\f110";
+    $font-Flaticon-math-on-blackboard: "\f111";
+    $font-Flaticon-lab-microscope: "\f112";
+    $font-Flaticon-microscope-side-view: "\f113";
+    $font-Flaticon-flask-outline: "\f114";
+    $font-Flaticon-home: "\f115";
+    $font-Flaticon-close-envelope: "\f116";
+    $font-Flaticon-chat-bubbles-with-ellipsis: "\f117";
+    $font-Flaticon-gallery: "\f118";
+    $font-Flaticon-pictures: "\f119";
+    $font-Flaticon-computer-monitor: "\f11a";
+    $font-Flaticon-identity-card: "\f11b";
+    $font-Flaticon-school-calendar: "\f11c";
+    $font-Flaticon-mathematics-class: "\f11d";
+    $font-Flaticon-books-stack-of-three: "\f11e";

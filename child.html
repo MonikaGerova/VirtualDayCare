@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="icons/font/flaticon.css">
+
+
+
+</head>
+<body>
+<div id="logo">
+</div>
+<div id="profile">
+    <div id="userCongrats">
+        <span>Здравей, </span>
+        <span id="user"></span>
+    </div>
+    <div id="profileNav">
+        <a href="index.html" id="logout">Излез</a>
+    </div>
+</div>
+<nav>
+    <ul id="menu">
+        <li class="current-li" id="home">
+            <span class="flaticon flaticon-home "></span>
+            <span style="left:-18%">Начало</span>
+        </li>
+        <li id="lectures">
+            <span class="flaticon flaticon-books-stack-of-three"></span>
+            <span>Материали</span>
+        </li>
+        <li id="exercises">
+            <span class="flaticon flaticon-math-on-blackboard "></span>
+            <span style="left:-23%">Упражнения</span>
+        </li>
+        <li id="gallery">
+            <span class="flaticon flaticon-pictures "></span>
+            <span>Галерия</span>
+        </li>
+        <li id="games">
+            <span class="flaticon flaticon-gamepad "></span>
+            <span style="left:-18%">Игри</span>
+        </li>
+        <li id="messagesWall">
+            <span class="flaticon flaticon-chat-bubbles-with-ellipsis "></span>
+            <span style="left:-26%">Стена за съобщения</span>
+        </li>
+        <li id="calendar">
+            <span class="flaticon flaticon-school-calendar "></span>
+            <span>Календар</span>
+        </li>
+    </ul>
+</nav>
+<div id="box" class="blurred">
+    <div id="content">
+        <div id="home-content" class="current-content">
+            <h1>HOME</h1>
+        </div>
+        <div id="lectures-content">
+            <h1>Материали</h1>
+            <div id="Lessons">
+                <ul id="lessons-nav">
+
+                </ul>
+            </div>
+        </div>
+        <div id="exercises-content">
+            <h1>Упражнения</h1>
+            <div id="tasks">
+                <div class="task">
+                    <h2 class="title">Задача 1</h2>
+                    <div class="task-content">
+                        Стандартният пасаж Lorem Ipsum, използван от 1500г. насам
+
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </div>
+                </div>
+                <div class="task">
+                    <h2 class="title">Задача 2</h2>
+                    <div class="task-content">
+                        Стандартният пасаж Lorem Ipsum, използван от 1500г. насам
+
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="gallery-content">
+            <h1>Галерия</h1>
+
+            <div id="pictures">
+
+            </div>
+        </div>
+        <div id="games-content">
+            <h1>IGRI</h1>
+        </div>
+        <div id="messagesWall-content">
+            <h1>Стена за съобщения</h1>
+            <div id="messages">
+            </div>
+            <div id="postMessage">
+                <form method="post" id="messagesForm">
+                    <textarea name="message" from="child" placeholder="Напишете вашето съобщение тук" id="messageBalloon"></textarea>
+                    <input type="submit" value="Изпрати" id="postButton">
+                </form>
+
+            </div>
+        </div>
+        <div id="calendar-content">
+            <h1>Kalendar</h1>
+        </div>
+    </div>
+
+    <div id="preview">
+        <div class="close-button" number="0">X</div>
+
+        <div></div>
+        <div>
+        </div>
+        <div>
+            <div class="arrow" id="leftArrow">&lt;</div>
+            <div class="arrow" id="rightArrow">&gt;</div>
+        </div>
+    </div>
+</div>
+
+<script src="js/messages.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/ChildFunctions.js"></script>
+</body>
+</html>

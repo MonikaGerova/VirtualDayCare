@@ -1,0 +1,5 @@
+{"child":"hi"}
+{"teacher":"kak si?"}
+{"teacher":"ds"}
+{"teacher":"ds"}
+{"child":"pos"}

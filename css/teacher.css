@@ -1,0 +1,256 @@
+/* Teacher panel Group of childer*/
+
+.kid {
+    display: inline-block;
+    width: 100px;
+    margin: 2%;
+    cursor: pointer;
+}
+
+.profilePic {
+    height: auto;
+    width: 100%;
+}
+#preview>div:nth-child(3)>div{
+    display: inline-block;
+    width: 45%;
+}
+#preview>div:nth-child(2){
+    display: none;
+}
+#preview #profileInfo {
+    width: 45%;
+    height: 87%;
+    /* display: none; */
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+#messagesWall-box{
+    width: 40%;
+    height: 95%;
+}
+
+#profileInfo .kid {
+    display: block;
+    width: 50%;
+    height: 50%;
+    padding: 3% 2%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 9px 8px rgba(128, 11, 11, 0.6);
+    box-sizing: border-box;
+    color: white;
+    margin: 0 auto;
+}
+#profileInfo .profilePic{
+    height: auto;
+    width: 75%;
+    background-color: rgba(159, 3, 18, 0.55);
+    padding: 5%;
+
+}
+#uploadGallery{
+    width: 70%;
+    height: 10%;
+    color: white;
+    /*margin-top: 10px;*/
+    padding-top: 25px;
+    display: block;
+    margin: 10px auto;
+}
+#uploadGallery label, #uploadGallery input[type="submit"]{
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 6px 4px rgba(128, 11, 11, 0.6);
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    color: #fff;
+}
+#photo{
+    display: none;
+}
+#photoName {
+    display: inline-block;
+    margin: 0 10px;
+    width: 110px;
+    overflow: hidden;
+}
+#uploadGallery form{
+    display: inline-block;
+    text-align: left;
+}
+#uploadResponse{
+    margin-left: 10px;
+    display: inline-block;
+    width: 20px;
+}
+.flaticon-letter-x{
+    color: #F44336;
+}
+.flaticon-tick-mark{
+    color: green;
+}
+
+#messagesWall-box h1, #notesWall h1 {
+    position: static;
+    color: white;
+    /* border-radius: 15px 20px 0px 0px; */
+    /* box-shadow: 0px 5px 12px 2px rgb(67, 15, 7); */
+    /* box-sizing: border-box; */
+    border-radius: 10px;
+    box-shadow: 0px 8px 9px 1px rgba(128, 11, 11, 0.6);
+    width: auto;
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 5px 20px;
+}
+/*#notesWall h1{*/
+    /*margin: 0;*/
+/*}*/
+/*#notesWall{*/
+    /*margin-top: 15px;*/
+    /*height: 30%;*/
+/*}*/
+/*#postNote textarea{*/
+    /*height: 20px;*/
+/*}*/
+/*#postBtn{*/
+    /*height: 38px;*/
+/*}*/
+/*#notesWall #notes{*/
+    /*height: 80%;*/
+    /*overflow: auto;*/
+/*}*/
+/*textarea#noteBalloon::placeholder{*/
+    /*font-size: 1em;*/
+    /*line-height: 1em;*/
+/*}*/
+
+#notesWall{
+    height:44%;
+}
+#notes,#writeNote{
+    height: 66%;
+    color: #a20600;
+    border-radius: 10px;
+    box-shadow: 0px 5px 9px 8px rgba(128, 11, 11, 0.6);
+    box-sizing: border-box;
+    text-align: left;
+    padding: 15px;
+}
+#writeNote{
+    outline: none;
+    display: none;
+    width: 100%;
+    resize: none;
+    color: #fff;
+    background-color: rgba(127, 21, 22, 0.39);
+    border: none;
+}
+
+div#uploadLesson-box {
+    height: 90%;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+#uploadLesson-box form{
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#drag-and-drop{
+    /*height: 80%;*/
+    border-radius: 5px;
+    box-shadow: 1px 2px 6px 4px rgba(128, 11, 11, 0.6);
+    box-sizing: border-box;
+}
+
+#drag-and-drop-box{
+    display: block;
+    width: 100%;
+    height: 245px;
+    background-color: rgba(158, 2, 17, 0.65);
+    border-radius: 5px 5px 0 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2em;
+}
+#drag-and-drop-box >span:first-child{
+    display: inline-block;
+    margin-top: 15%;
+}
+#previewFile{
+    padding-top: 10%;
+}
+#previewFile span {
+    width: 25%;
+    height: 90px;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 20px;
+    margin: 5px 10px;
+
+}
+#previewFile span:before{
+    display: block;
+    font-size: 3em;
+}
+#urlFile {
+    padding: 0 5%;
+    display: block;
+    height: 45px;
+    width: 90%;
+    outline: none;
+    border: none;
+    background-color: rgba(158, 2, 17, 0.52);
+    /* box-shadow: 1px 2px 6px 4px rgba(128, 11, 11, 0.6); */
+    /* box-sizing: border-box; */
+    color: rgba(255, 255, 255, 0.5);
+}
+#urlFile::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+#file{
+    display: block;
+    opacity: 0;
+    /* background-color: white; */
+    background: white;
+    cursor: pointer;
+    position: absolute;
+    width: 55%;
+    height: 240px;
+}
+#fileTitle{
+    width: 100%;
+    height: 10%;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 6px 4px rgba(128, 11, 11, 0.6);
+    box-sizing: border-box;
+    border: none;
+    /* background: #fbe5e5; */
+    color: #9e0211;
+    margin: 20px 0;
+}
+#uploadFileBtn {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #9e0211;
+    color: white;
+    font-weight: bold;
+    margin: -5px 0;
+    border-radius: 0 0px 5px 5px;
+}
+
+#uploadLectureResponse {
+    position: relative;
+    left: 86%;
+    width: 30px;
+    bottom: 7%;
+}

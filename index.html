@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VirtualDayCare</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="icons/font/flaticon.css">
+
+
+</head>
+<body>
+<nav>
+    <ul id="menu">
+        <li class="current-li" id="asChild">
+            <span class="flaticon flaticon-people-1 "></span>
+            <span style="left:-18%">Като дете</span>
+        </li>
+        <li id="asTeacher">
+            <span class="flaticon flaticon-teacher "></span>
+            <span style="left:-18%">Като учител</span>
+        </li>
+
+    </ul>
+</nav>
+<div id="box" class="blurred">
+    <div id="content">
+        <div id="asChild-content" class="current-content">
+            <h1>Влез като дете</h1>
+            <div class="login">
+                <form  method="get" action="child.html?">
+                    <input type="text" placeholder="Име" name="user">
+                    <input type="password" placeholder="парола">
+                    <input type="SUBMIT" value="Влизане" class="green">
+                </form>
+            </div>
+            <div id="childResponse"></div>
+        </div>
+        <div id="asTeacher-content" >
+            <h1>Влез като учител</h1>
+            <div class="login">
+                <form  method="get" action="teacher.html">
+                    <input type="text" placeholder="Име" name="user">
+                    <input type="password" placeholder="парола">
+                    <input type="SUBMIT" value="Влизане" class="green">
+                </form>
+            </div>
+            <div id="teacherResponse"></div>
+        </div>
+    </div>
+    </div>
+</div>
+<script src="js/menu.js"></script>
+<script type="text/javascript">
+    (function(){
+        menu();
+
+        var forms = document.forms;
+
+        for (var i = 0; i < forms.length; i++) {
+            forms[i].i = i;
+            forms[i].addEventListener("submit",function (event) {
+                    if (this.i){
+                        if (!this.user.value) {
+                            document.getElementById("teacherResponse").innerHTML = "Грешно име! Моля опитайте със следните:<br>" +
+                                    " <br> <b>teacher</b>";
+                            event.preventDefault();
+                        }
+                    }else{
+                        if(this.user.value != "goshko" &&this.user.value != "vanio"){
+                            document.getElementById("childResponse").innerHTML = "Грешно име! Моля опитайте със следните:<br>" +
+                                    " <b>goshko, vanio</b>";
+                            event.preventDefault();
+                        }
+                    }
+            });
+        }
+    })();
+</script>
+</body>
+</html>

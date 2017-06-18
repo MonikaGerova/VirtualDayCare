@@ -1,0 +1,48 @@
+<div class="close-button" number="0">X</div>
+<div></div>
+<div>
+    <div id="profileInfo">
+        <div class="kid">
+            <img src="child.png" class="profilePic" alt="">
+            <span></span>
+        </div>
+        <div id="uploadGallery">
+            <form method="post" enctype="multipart/form-data" id="uploadForm">
+                <label for="photo">Изберете файл</label>
+                <span id="photoName"></span>
+                <input type="file" name="photo" class="photo" id="photo">
+                <input type="hidden" name="username" id="hiddenUsername">
+                <input type="submit" value="Upload">
+            </form>
+            <div id="uploadResponse"></div>
+        </div>
+        <div id="notesWall">
+            <h1>Бележки</h1>
+            <!--<div id="postNote">-->
+            <!--<form method="post" id="notesForm">-->
+            <!--<textarea name="message" from="child" placeholder="Напишете вашето съобщение тук" id="noteBalloon"></textarea>-->
+            <!--<input type="submit" value="Изпрати" id="postBtn">-->
+            <!--</form>-->
+            <!--</div>-->
+            <!--<div id="notes">-->
+
+            <!--</div>-->
+
+            <div id="notes">
+
+            </div>
+            <textarea id="writeNote" ></textarea>
+        </div>
+    </div>
+    <div id="messagesWall-box">
+        <h1>Стена за съобщения</h1>
+        <div id="messages">
+        </div>
+        <div id="postMessage">
+            <form method="post" id="messagesForm">
+                <textarea name="message" from="child" placeholder="Напишете вашето съобщение тук" id="messageBalloon"></textarea>
+                <input type="submit" value="Изпрати" id="postButton">
+            </form>
+        </div>
+    </div>
+</div>

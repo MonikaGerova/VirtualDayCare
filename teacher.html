@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="icons/font/flaticon.css">
+    <link rel="stylesheet" href="css/teacher.css">
+</head>
+<body>
+<div id="profile">
+    <div id="userCongrats">
+        <span>Здравей, </span>
+        <span id="user"></span>
+    </div>
+    <div id="profileNav">
+        <a href="index.html" id="logout">Излез</a>
+    </div>
+</div>
+
+<nav>
+    <ul id="menu">
+        <li class="current-li" id="group">
+            <span class="flaticon flaticon-folder "></span>
+            <span style="left:-18%">Преглед на група</span>
+        </li>
+        <li id="uploadLectures">
+            <span class="flaticon flaticon-teacher "></span>
+            <span style="left:-18%">Качване на Уроци</span>
+        </li>
+        <!--<li id="uploadExercises">-->
+            <!--<span class="flaticon flaticon-learning "></span>-->
+            <!--<span style="left:-18%">Качване на упражнения</span>-->
+        <!--</li>-->
+        <li id="calendar">
+            <span class="flaticon flaticon-school-calendar "></span>
+            <span>Календар</span>
+        </li>
+    </ul>
+</nav>
+<div id="box" class="blurred">
+    <div id="content">
+        <div id="group-content" class="current-content">
+            <h1>Преглед на група</h1>
+            <div id="group-box"></div>
+        </div>
+        <div id="uploadLectures-content">
+            <h1>Качване на уроци</h1>
+            <div id="uploadLesson-box">
+                <form method="post" enctype="multipart/form-data" id="fileForm">
+                    <input type="text" name="name" placeholder="Добавете заглавие тук" id="fileTitle">
+                    <div id="drag-and-drop">
+                        <input type="file" name="file" id="file">  <!--multiple-->
+                        <div id="drag-and-drop-box">
+                            <span>Поставете файла тук</span>
+                            <!--<div id="previewFiles">-->
+                                <!--<div id="fileIcon">-->
+                                    <!--<span class="flaticon flaticon-list"></span>-->
+                                    <!--<span> Name</span>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                        </div>
+                        <input type="text" name="url" id="urlFile" placeholder="Или добавете линк">
+                        <input type="submit" value="Upload" id="uploadFileBtn">
+                    </div>
+                </form>
+                <div id="uploadLectureResponse"></div>
+            </div>
+        </div>
+        <!--<div id="uploadExercises-content">-->
+            <!--<h1>Качване на упражнения</h1>-->
+            <!--<div id="tasks">-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <div id="calendar-content">
+            <h1>Календар</h1>
+
+            <div id="calendar-box">
+                <div id="calendar-month-year"></div>
+                <table>
+                    <tr id="calendar-day-names">
+                        <td>Понеделник</td>
+                        <td>Вторник</td>
+                        <td>Сряда</td>
+                        <td>Четвъртък</td>
+                        <td>Петък</td>
+                        <td>Събота</td>
+                        <td>Неделя</td>
+                    </tr>
+
+                    <tr class="calendar-darked-row">
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="calendar-darked-row">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="calendar-darked-row">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <div id="calendar-Arrows">
+                    <div class="arrow" id="leftArrow">&lt;</div>
+                    <div class="arrow" id="rightArrow">&gt;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="preview">
+        <div class="close-button" number="0">X</div>
+        <div></div>
+        <div>
+            <div id="profileInfo">
+                <div class="kid">
+                    <img src="child.png" class="profilePic" alt="">
+                    <span></span>
+                </div>
+                <div id="uploadGallery">
+                    <form method="post" enctype="multipart/form-data" id="uploadForm">
+                        <label for="photo">Изберете файл</label>
+                        <span id="photoName"></span>
+                        <input type="file" name="photo" class="photo" id="photo">
+                        <input type="hidden" name="username" id="hiddenUsername">
+                        <input type="submit" value="Upload">
+                    </form>
+                    <div id="uploadResponse"></div>
+                </div>
+                <div id="notesWall">
+                    <h1>Бележки</h1>
+                    <!--<div id="postNote">-->
+                        <!--<form method="post" id="notesForm">-->
+                            <!--<textarea name="message" from="child" placeholder="Напишете вашето съобщение тук" id="noteBalloon"></textarea>-->
+                            <!--<input type="submit" value="Изпрати" id="postBtn">-->
+                        <!--</form>-->
+                    <!--</div>-->
+                    <!--<div id="notes">-->
+
+                    <!--</div>-->
+
+                    <div id="notes">
+
+                    </div>
+                    <textarea id="writeNote" ></textarea>
+                </div>
+            </div>
+            <div id="messagesWall-box">
+                <h1>Стена за съобщения</h1>
+                <div id="messages">
+                </div>
+                <div id="postMessage">
+                    <form method="post" id="messagesForm">
+                        <textarea name="message" from="child" placeholder="Напишете вашето съобщение тук" id="messageBalloon"></textarea>
+                        <input type="submit" value="Изпрати" id="postButton">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/messages.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/TeacherFunctions.js"></script>
+
+</body>
+</html>

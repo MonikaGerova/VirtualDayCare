@@ -1,0 +1,5 @@
+﻿{"name":"Урок 1","url":"VirtualDayCare_Analysis_61832_61823.pdf"}
+{"name":"Урок 2","url":"untitled3.mp4"}
+{"name":"Урок 3","url":"https://www.youtube.com/watch?v=50VWOBi0VFs"}
+{"name":"PCHMI","url":"Primerno_zadanie1.pdf"}
+{"name":"w3School","url":"https://www.w3schools.com/tags/att_input_multiple.asp"}
